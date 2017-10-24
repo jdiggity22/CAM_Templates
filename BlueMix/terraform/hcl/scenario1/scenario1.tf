@@ -38,5 +38,6 @@ resource "ibm_compute_vm_instance" "debian_small_virtual_guest" {
     dedicated_acct_host_only = false
     local_disk = false
     ssh_key_ids = ["${ibm_compute_ssh_key.orpheus_public_key.id}"]
+    count = 2
 }
 
