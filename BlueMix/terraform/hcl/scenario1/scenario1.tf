@@ -32,7 +32,7 @@ resource "ibm_compute_vm_instance" "debian_small_virtual_guest" {
     hourly_billing = true
     private_network_only = false
     cores = 1
-    memory = 1048
+    memory = 2048
     disks = [25, 10, 20]
     user_metadata = "{\"value\":\"newvalue\"}"
     dedicated_acct_host_only = false
